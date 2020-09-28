@@ -1,0 +1,2 @@
+# chrome_plugin_zhihu_adblock
+屏蔽知乎广告Chrome插件
