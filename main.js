@@ -13,7 +13,7 @@
         myFetch: function (...args) {
             return fetch_helper.originalFetch(...args).then((response) => {
                 if (response.url.startsWith("https://www.zhihu.com/api/v3/feed/topstory/recommend?")) {
-                    setTimeout(fuckAd, 300);
+                    setTimeout(fuckAd, 180);
                 }
                 return response;
             });
