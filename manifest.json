@@ -9,12 +9,12 @@
 		"48": "icon.png",
 		"128": "icon.png"
 	},
-	"browser_action": 
+	"browser_action":
 	{
 		"default_icon": "icon.png",
 		"default_popup": "popup.html"
 	},
-	"content_scripts": 
+	"content_scripts":
 	[
 		{
 			"matches": ["https://www.zhihu.com/*"],
@@ -22,7 +22,7 @@
 			"run_at":"document_start"
 		}
 	],
-	"web_accessible_resources": 
+	"web_accessible_resources":
 	[
 		"main.js",
 		"jquery.min.js"
