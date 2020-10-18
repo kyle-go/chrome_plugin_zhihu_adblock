@@ -14,7 +14,7 @@
             }
 
             // 删掉广告
-            [...ads].forEach(item => item.parentNode.removeChild(ads));
+            [...ads].forEach(item => item.parentNode.removeChild(item));
         }
     }
 
