@@ -22,8 +22,11 @@
     const fetch_helper = {
         originalFetch: window.fetch.bind(window),
         myFetch: function (...args) {
+            // if (args[0].includes('https://www.zhihu.com/commercial_api/')) {
+            //     return Promise.reject(1);
+            // }
             return fetch_helper.originalFetch(...args).then((response) => {
-                //console.log(response.url)
+                // console.log(response)
                 if (response.url.startsWith("https://www.zhihu.com/api/v3/feed/topstory/recommend?")) {
                     setTimeout(createFuckAd('.Pc-feedAd-container', '.Pc-feedAd-card-brand--bold'), 188);
                 }
